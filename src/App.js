@@ -14,7 +14,7 @@ export default function App() {
   };
   const test1 = person?.current; //undefined
   const test2 = person?.email; //mail@mail.com
-  const test3 = person.surname; //undefined - rompe
+  const test3 = person.currentJob?.title; //undefined - rompe
 
   console.log(test1);
   console.log(test2);
@@ -57,8 +57,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h1>{test3}</h1>
     </div>
   );
 }
